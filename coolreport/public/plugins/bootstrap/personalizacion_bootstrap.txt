@@ -1,0 +1,20 @@
+@navbar-height
+40px
+
+
+Inverted navbar
+
+@navbar-inverse-color
+	#FFF
+
+@navbar-inverse-bg
+	#47BBEA
+
+@navbar-inverse-link-color
+	#e7e7e7
+
+@navbar-inverse-link-hover-color
+	#FFFFFF
+
+@navbar-inverse-link-disabled-color
+	#e7e7e7

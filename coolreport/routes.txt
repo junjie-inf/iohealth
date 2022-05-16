@@ -1,0 +1,79 @@
++------------------------------------------------+--------------------------------------------+-------------------------------+
+| URI                                            | Name                                       | Action                        |
++------------------------------------------------+--------------------------------------------+-------------------------------+
+| GET report/{report}/attachment/{hash}/download | report.{report}.attachment.{hash}.download | AttachmentController@download |
+| GET report/{report}/attachment/{hash}/display  | report.{report}.attachment.{hash}.display  | AttachmentController@display  |
+| POST report/{report}/attachment/{hash}/check   | report.{report}.attachment.{hash}.check    | AttachmentController@check    |
+| GET report/{report}/comment                    | report.{report}.comment.index              | CommentController@index       |
+| POST report/{report}/comment                   | report.{report}.comment.store              | CommentController@store       |
+| DELETE report/{report}/comment/{comment}       | report.{report}.comment.destroy            | CommentController@destroy     |
+| POST report/{report}/vote                      | report.{report}.vote.store                 | VoteController@store          |
+| POST report/file                               | report.file                                | ReportController@file         |
+| GET report/search                              | report.search                              | ReportController@search       |
+| GET report                                     | report.index                               | ReportController@index        |
+| GET report/create                              | report.create                              | ReportController@create       |
+| POST report                                    | report.store                               | ReportController@store        |
+| GET report/{report}                            | report.show                                | ReportController@show         |
+| GET report/{report}/edit                       | report.edit                                | ReportController@edit         |
+| PUT report/{report}                            | report.update                              | ReportController@update       |
+| PATCH report/{report}                          |                                            | ReportController@update       |
+| DELETE report/{report}                         | report.destroy                             | ReportController@destroy      |
+| GET template                                   | template.index                             | TemplateController@index      |
+| GET template/create                            | template.create                            | TemplateController@create     |
+| POST template                                  | template.store                             | TemplateController@store      |
+| GET template/{template}                        | template.show                              | TemplateController@show       |
+| GET template/{template}/edit                   | template.edit                              | TemplateController@edit       |
+| PUT template/{template}                        | template.update                            | TemplateController@update     |
+| PATCH template/{template}                      |                                            | TemplateController@update     |
+| DELETE template/{template}                     | template.destroy                           | TemplateController@destroy    |
+| GET user                                       | user.index                                 | UserController@index          |
+| GET user/create                                | user.create                                | UserController@create         |
+| POST user                                      | user.store                                 | UserController@store          |
+| GET user/{user}                                | user.show                                  | UserController@show           |
+| GET user/{user}/edit                           | user.edit                                  | UserController@edit           |
+| PUT user/{user}                                | user.update                                | UserController@update         |
+| PATCH user/{user}                              |                                            | UserController@update         |
+| DELETE user/{user}                             | user.destroy                               | UserController@destroy        |
+| GET group                                      | group.index                                | GroupController@index         |
+| GET group/create                               | group.create                               | GroupController@create        |
+| POST group                                     | group.store                                | GroupController@store         |
+| GET group/{group}                              | group.show                                 | GroupController@show          |
+| GET group/{group}/edit                         | group.edit                                 | GroupController@edit          |
+| PUT group/{group}                              | group.update                               | GroupController@update        |
+| PATCH group/{group}                            |                                            | GroupController@update        |
+| DELETE group/{group}                           | group.destroy                              | GroupController@destroy       |
+| POST role/{role}/permission                    | role.{role}.permission.store               | PermissionController@store    |
+| PUT role/{role}/permission/{permission}        | role.{role}.permission.update              | PermissionController@update   |
+| PATCH role/{role}/permission/{permission}      |                                            | PermissionController@update   |
+| DELETE role/{role}/permission/{permission}     | role.{role}.permission.destroy             | PermissionController@destroy  |
+| GET role                                       | role.index                                 | RoleController@index          |
+| GET role/create                                | role.create                                | RoleController@create         |
+| POST role                                      | role.store                                 | RoleController@store          |
+| GET role/{role}                                | role.show                                  | RoleController@show           |
+| GET role/{role}/edit                           | role.edit                                  | RoleController@edit           |
+| PUT role/{role}                                | role.update                                | RoleController@update         |
+| PATCH role/{role}                              |                                            | RoleController@update         |
+| DELETE role/{role}                             | role.destroy                               | RoleController@destroy        |
+| POST auth/login                                | auth.login                                 | AuthController@login          |
+| POST auth/check                                | auth.check                                 | AuthController@check          |
+| GET auth/logout                                | auth.logout                                | AuthController@logout         |
+| GET auth/signup                                | auth.signup                                | AuthController@create         |
+| GET auth                                       | auth.index                                 | AuthController@index          |
+| GET auth/create                                | auth.create                                | AuthController@create         |
+| POST auth                                      | auth.store                                 | AuthController@store          |
+| GET profile/report                             | profile.report                             | ProfileController@report      |
+| GET profile                                    | profile.index                              | ProfileController@index       |
+| GET profile/{profile}                          | profile.show                               | ProfileController@show        |
+| PUT profile/{profile}                          | profile.update                             | ProfileController@update      |
+| PATCH profile/{profile}                        |                                            | ProfileController@update      |
+| GET dashboard                                  | dashboard                                  | DashboardController@dashboard |
+| POST statistic/query                           | statistic.query                            | StatisticController@query     |
+| GET statistic                                  | statistic                                  | StatisticController@index     |
+| GET setting                                    | setting                                    | DashboardController@setting   |
+| GET /                                          | landing                                    | MapController@index           |
+| GET map/marker                                 | map.marker                                 | MapController@marker          |
+| GET about                                      | static.about                               | Closure                       |
+| GET contact                                    | static.contact                             | Closure                       |
+| GET terms                                      | static.terms                               | Closure                       |
+| GET product                                    | static.product                             | Closure                       |
++------------------------------------------------+--------------------------------------------+-------------------------------+

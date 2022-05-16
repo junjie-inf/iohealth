@@ -1,0 +1,59 @@
+{
+	"name": "laravel/laravel",
+	"description": "The Laravel Framework.",
+	"keywords": ["framework", "laravel"],
+	"license": "MIT",
+	"require": {
+		"laravel/framework": "4.2.*",
+		"way/generators": "2.6.*",
+		"twitter/bootstrap": "3.2.*",
+		"Marwelln/basset": "4.0.*",
+		"leafo/lessphp": "0.4.*",
+		"cssmin/cssmin": "3.0.*",
+		"mrclay/minify": "dev-master",
+		"alchemyai/alchemyapi_php": "dev-master",
+		"guzzlehttp/guzzle": "~6.0"
+	},
+	"autoload": {
+		"classmap": [
+			"app/commands",
+			"app/controllers",
+			"app/models",
+			"app/database/migrations",
+			"app/database/seeds",
+			"app/libraries/nimbeo",
+			"app/repositories",
+			"app/tests/TestCase.php"
+		]
+	},
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "cssmin/cssmin",
+				"version": "3.0.1",
+				"dist": {"url": "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cssmin/cssmin-v3.0.1.php", "type": "file"},
+				"autoload": {"classmap": ["cssmin-v3.0.1.php"]}
+			}
+		}
+	],
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan optimize"
+		],
+		"pre-update-cmd": [
+			"php artisan clear-compiled"
+		],
+		"post-update-cmd": [
+			"php artisan optimize"
+		],
+		"post-create-project-cmd": [
+			"php artisan key:generate"
+		]
+	},
+	"config": {
+		"preferred-install": "dist",
+		"secure-http": false
+	},
+	"minimum-stability": "dev"
+}

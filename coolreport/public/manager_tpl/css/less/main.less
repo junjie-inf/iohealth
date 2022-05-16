@@ -1,0 +1,239 @@
+@font-face {
+	font-family: "Neo Sans";
+	src: url("../font/neosans/Neo Sans Std Regular.otf") format("opentype");
+}
+
+/* Basic
+=================================================================== */
+.no-space [class*="span"] {
+	margin-left: 0;
+}
+
+.noMarginLeft {
+	margin-left: 0px !important;
+}
+
+.noPadding {
+	padding: 0px !important;
+}
+
+.ch-nav-s {
+	border-radius: 20px;
+}
+
+body {
+	background: @darkGrey;
+	color: @darkGrey;
+	border: none;
+	/*font-family: 'Lato', sans-serif;*/
+	font-family: 'Neo Sans';
+	font-style: normal;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: @soteclightgreen;
+}
+
+h1 { font-size: 32px; line-height: 32px; font-weight: 300}
+h2 { font-size: 16px; line-height: 16px; font-weight: 300}
+h3 { font-size: 15px; line-height: 15px; }
+h4 { font-size: 14px; line-height: 14px; }
+h5 { font-size: 13px; line-height: 13px; }
+h6 { font-size: 12px; line-height: 12px; }
+
+#content {
+	min-height: 100%;
+	padding: 20px 20px;
+	position: relative;
+	background: @bodyBackground;
+	
+	&.full {
+		width: 100% !important;
+		margin-left: 0px !important;
+	}
+}
+
+.well {
+	border: 1px solid #ddd;
+	background-color: #f6f6f6;
+	.box-shadow;
+	.border-radius(2px);
+}
+
+.box {
+	.border-radius(2px);
+	.box-shadow(0px 1px 0px 1px lighten(@grey, 10%));
+	margin: 0px 0px 30px 0px;
+	border-radius: 19px;
+	background-color: white;
+	
+	&.noOverflow {
+		overflow: hidden;
+	}
+	
+	.box-header {
+		background: @mainColor;
+		color: white;
+		font-size: 16px;
+		overflow: hidden;
+		border-radius: 19px;
+
+		h2 {
+			float:left;
+			padding: 10px 0px;
+			margin: 0px 0px 0px 20px;
+
+			i {
+				//background: darken(@mainColor,10%);
+				color: white;
+				padding: 10px 0px;
+				width: 36px;
+				display: inline-block;
+				text-align: center;
+				margin: -10px 20px -10px -20px;
+			}
+
+		}
+
+		.box-icon {
+			background: darken(@mainColor,10%);
+			float:right;
+			border-radius: 25px;
+
+			i {
+				border-radius: 25px;
+				display: inline-block;
+				color: white;
+				text-align: center;
+				width: 36px;
+				height: 36px;
+				padding: 10px 0px;
+				.transition(all 0.1s ease-in-out);
+				opacity: .8;
+				filter: alpha(opacity=80);
+				-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+				//border-left: 1px solid @mainColor;
+				text-decoration: none;
+
+				&:hover {
+					opacity: 1;
+					filter: alpha(opacity=100);
+					-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+				}
+			}
+
+			a {
+
+			}
+
+		}
+
+	}
+	
+	.box-content {
+		padding: 10px;
+		background: white;	
+		border-radius: 22px;
+	}
+	
+}
+
+/* Typography - Blockquote
+=================================================================== */	
+blockquote {
+	background: url(../img/quote.png) no-repeat 0px 10px;
+	font-style: italic;
+	border-left: none;
+	padding: 0 0 0 30px;
+}
+
+.reco_doct {
+	/*
+	border-style: solid;
+    border-width: 1px;
+    padding: 4px;
+    border-radius: 12px;
+    */
+    p {
+	    border-bottom-style: solid;
+	    border-width: 1px;
+	    padding-left: 5px;
+	    padding-bottom: 4px;
+	    margin-right: 20px;
+    }
+    
+}
+.content_reco_doct {
+    //margin-top: 14px;
+    margin-right: 20px;
+    margin-bottom: 28px;
+    font-size: 15px;
+    border-left-style: solid;
+    padding-left: 12px;
+    padding: 7px;
+    background-color: rgba(42, 112, 56, 0.09);
+}
+
+#personState{
+	p{
+		margin-right: 20px;
+	    margin-bottom: 0px;
+	    font-size: 15px;
+	    border-left-style: solid;
+	    padding-left: 12px;
+	    padding: 7px;
+	    font-weight: bold;
+	    background-color: rgba(42, 112, 56, 0.09);
+	}
+	h2{
+		border-bottom-style: solid;
+	    border-width: 1px;
+	    padding-left: 5px;
+	    padding-bottom: 4px;
+	    margin-right: 20px;
+	    padding-right: 4px;
+	}
+}
+
+.treat {
+	h2 {
+		border-bottom-style: solid;
+	    border-width: 1px;
+	    padding-left: 5px;
+	    padding-bottom: 4px;
+	    margin-right: 20px;
+	    padding-right: 4px;
+	}
+	.nm, .ct_tab{
+		margin-right: 20px;
+	    margin-bottom: 0px;
+	    font-size: 15px;
+	    border-left-style: solid;
+	    padding-left: 12px;
+	    padding: 7px;
+	    font-weight: bold;
+	    background-color: rgba(42, 112, 56, 0.09);
+	    //margin-top: 4px;
+	}
+	.ct_tab {
+	padding-left: 50px;
+	}
+	p {
+		margin-bottom: 4px;
+	}
+}
+
+.person_data {
+	margin-bottom: -20px;
+}
+
+.title_reco {
+	margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+
+

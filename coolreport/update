@@ -1,0 +1,80 @@
+#!/usr/bin/env php
+<?php
+
+/*
+ | --------------------------------------------------------------------------
+ |  Config
+ | --------------------------------------------------------------------------
+ */
+
+$MAIN_PATH = 'workbench';
+
+/*
+ | --------------------------------------------------------------------------
+ |  Init
+ | --------------------------------------------------------------------------
+ */
+
+echo <<<END
+ 
+ ## ====================================== ##
+ ||                                        ||
+ ||  *  Composer workbench update util  *  ||
+ ||                                        ||
+ ## ====================================== ##
+ 
+
+END;
+
+if( PHP_SAPI != 'cli' )
+{
+	die( " USAGE: php {$argv[0]}\n" );
+}
+
+$VERBOSE = false;
+
+if( $argc > 1 && ( $argv[1] == 'verbose' || $argv[1] == '-v' ) )
+{
+	$VERBOSE = true;
+}
+
+/*
+ | --------------------------------------------------------------------------
+ |  Vendors & workbenchs
+ | --------------------------------------------------------------------------
+ */
+
+if( file_exists($MAIN_PATH) && is_dir($MAIN_PATH) )
+{
+	foreach( array_filter( scandir( $MAIN_PATH ), function( $value ) use ( & $MAIN_PATH ) { return $value != '.' && $value != '..' && is_dir( $MAIN_PATH . DIRECTORY_SEPARATOR . $value ); } ) as $VENDOR_DIR )
+	{
+		echo " -> Vendor {$VENDOR_DIR}...\n";
+
+		$VENDOR_PATH = $MAIN_PATH . DIRECTORY_SEPARATOR . $VENDOR_DIR;
+
+		foreach( array_filter( scandir( $VENDOR_PATH ), function( $value ) use ( & $VENDOR_PATH ) { return $value != '.' && $value != '..' && is_dir( $VENDOR_PATH . DIRECTORY_SEPARATOR . $value ); } ) as $WORKBENCH_DIR )
+		{
+			echo " |-> Workbench {$WORKBENCH_DIR}...\n";
+
+			$WORKBENCH_PATH = $VENDOR_PATH . DIRECTORY_SEPARATOR . $WORKBENCH_DIR;
+
+			$result = shell_exec( "composer update -d {$WORKBENCH_PATH}" );
+
+			if( $VERBOSE ) echo $result . "\n";
+		}
+	}
+}
+
+/*
+ | --------------------------------------------------------------------------
+ |  Main
+ | --------------------------------------------------------------------------
+ */
+
+echo " -> Updating all packages...\n";
+
+$result = shell_exec( "composer update" );
+		
+if( $VERBOSE ) echo $result . "\n";
+
+exit(1);

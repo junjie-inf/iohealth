@@ -1,0 +1,541 @@
+/* CoolReport inherith Style
+-------------------------------------------------- */
+.inh_textleft{text-align:left}
+.inh_textcenter{text-align:center}
+.inh_textright{text-align:right}
+
+
+.inh_small{font-size:85%}
+.inh_clearboth{clear:both}
+.inh_hidden{display:none}
+.inh_bold{font-weight:bold!important}
+.inh_nobold{font-weight:normal!important}
+.inh_vmiddle{vertical-align:middle}
+.inh_vtextbottom{vertical-align:text-bottom}
+.inh_capitalize{ text-transform:capitalize }
+.inh_inline-block{ display: inline-block; }
+.inh_nofloat{ float: none!important; }
+
+.inh_nomargin{ margin:0!important; }
+.inh_nomargin-left{ margin-left:0!important; }
+.inh_nomargin-right{ margin-right:0!important; }
+.inh_nomargin-top{ margin-top:0!important; }
+.inh_nomargin-bottom{ margin-bottom:0!important; }
+.inh_nopadding{ padding:0!important; }
+.inh_nopadding-left{ padding-left:0!important; }
+.inh_nopadding-right{ padding-right:0!important; }
+.inh_nopadding-top{ padding-top:0!important; }
+.inh_nopadding-bottom{ padding-bottom:0!important; }
+.inh_noborder{ border:0!important; }
+.inh_noborder-left{ border-left:0!important; }
+.inh_noborder-right{ border-right:0!important; }
+.inh_noborder-top{ border-top:0!important; }
+.inh_noborder-bottom{ border-bottom:0!important; }
+.inh_nowrap{ white-space: nowrap; }
+
+/*Fixes for tables*/
+th.width-min{width:1px!important}
+th.width-50{width:50px!important}
+
+/*Font size*/
+.bigger-120{font-size:120%}
+
+/*Spaces*/
+.margin-top-5,
+.margin-top-10,
+.margin-top-20,
+.margin-top-20,
+.margin-top-25,
+.margin-top-40,
+.margin-top-50,
+.margin-top-60,
+.margin-bottom-5,
+.margin-bottom-10,
+.margin-bottom-20,
+.margin-bottom-20,
+.margin-bottom-25,
+.margin-bottom-40,
+.margin-bottom-50,
+.margin-bottom-60{clear:both}
+.margin-top-5{margin-top:5px}
+.margin-top-10{margin-top:10px}
+.margin-top-20{margin-top:20px}
+.margin-top-25{margin-top:25px}
+.margin-top-30{margin-top:30px}
+.margin-top-40{margin-top:40px}
+.margin-top-50{margin-top:50px}
+.margin-top-60{margin-top:60px}
+.margin-bottom-5{margin-bottom:5px}
+.margin-bottom-10{margin-bottom:10px}
+.margin-bottom-20{margin-bottom:20px}
+.margin-bottom-25{margin-bottom:25px}
+.margin-bottom-30{margin-bottom:30px}
+.margin-bottom-40{margin-bottom:40px}
+.margin-bottom-50{margin-bottom:50px}
+.margin-bottom-60{margin-bottom:60px}
+
+.padding-top-5,
+.padding-top-10,
+.padding-top-20,
+.padding-top-20,
+.padding-top-25,
+.padding-top-40,
+.padding-top-50,
+.padding-top-60,
+.padding-bottom-5,
+.padding-bottom-10,
+.padding-bottom-20,
+.padding-bottom-20,
+.padding-bottom-25,
+.padding-bottom-40,
+.padding-bottom-50,
+.padding-bottom-60{clear:both}
+.padding-top-5{padding-top:5px}
+.padding-top-10{padding-top:10px}
+.padding-top-20{padding-top:20px}
+.padding-top-25{padding-top:25px}
+.padding-top-30{padding-top:30px}
+.padding-top-40{padding-top:40px}
+.padding-top-50{padding-top:50px}
+.padding-top-60{padding-top:60px}
+.padding-bottom-5{padding-bottom:5px}
+.padding-bottom-10{padding-bottom:10px}
+.padding-bottom-20{padding-bottom:20px}
+.padding-bottom-25{padding-bottom:25px}
+.padding-bottom-30{padding-bottom:30px}
+.padding-bottom-40{padding-bottom:40px}
+.padding-bottom-50{padding-bottom:50px}
+.padding-bottom-60{padding-bottom:60px}
+
+.inh_ellipsis{
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	-ms-text-overflow:ellipsis;
+	-moz-binding:url(/ellipsis-xbl.xml#ellipsis);
+}
+
+.inh_italic{font-style: italic}
+
+
+h2.big{
+	font-size: 24px;
+	line-height: 24px;
+}
+
+.grey-hover:hover{color:#999}
+.hover-bg-grey:hover{background-color:#f0f0f0}
+
+.cursor-pointer{cursor:pointer}
+
+/* Website Styles
+-------------------------------------------------- */
+
+.custom-fluid-container {
+	max-width: none !important;
+	width: 100%!important;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+.navbar .custom-fluid-container {
+	padding-left: 0;
+	padding-right: 15px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #FFF;
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+	color: #E7E7E7;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+
+footer{
+	margin: 5em 0;
+}
+footer li {
+	float: left;
+	margin-right: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+
+
+
+/* HACK */
+.cr.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+.cr.col-xs-1,
+.cr.col-xs-2,
+.cr.col-xs-3,
+.cr.col-xs-4,
+.cr.col-xs-5,
+.cr.col-xs-6,
+.cr.col-xs-7,
+.cr.col-xs-8,
+.cr.col-xs-9,
+.cr.col-xs-10,
+.cr.col-xs-11,
+.cr.col-xs-12,
+.cr.col-sm-1,
+.cr.col-sm-2,
+.cr.col-sm-3,
+.cr.col-sm-4,
+.cr.col-sm-5,
+.cr.col-sm-6,
+.cr.col-sm-7,
+.cr.col-sm-8,
+.cr.col-sm-9,
+.cr.col-sm-10,
+.cr.col-sm-11,
+.cr.col-sm-12,
+.cr.col-md-1,
+.cr.col-md-2,
+.cr.col-md-3,
+.cr.col-md-4,
+.cr.col-md-5,
+.cr.col-md-6,
+.cr.col-md-7,
+.cr.col-md-8,
+.cr.col-md-9,
+.cr.col-md-10,
+.cr.col-md-11,
+.cr.col-md-12,
+.cr.col-lg-1,
+.cr.col-lg-2,
+.cr.col-lg-3,
+.cr.col-lg-4,
+.cr.col-lg-5,
+.cr.col-lg-6,
+.cr.col-lg-7,
+.cr.col-lg-8,
+.cr.col-lg-9,
+.cr.col-lg-10,
+.cr.col-lg-11,
+.cr.col-lg-12 {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+
+
+
+
+/* Discussions
+ * http://bootstrapmaster.com/live/simpliq2/assets/css/style.css
+=================================================================== */
+.discussions ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.discussions ul li {
+	position: relative;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 0px 1px 0px 1px #e4e6eb;
+	-moz-box-shadow: 0px 1px 0px 1px #e4e6eb;
+	box-shadow: 0px 1px 0px 1px #e4e6eb;
+	background: white;
+	padding-left: 70px;
+	padding-right: 40px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	margin-left: 80px;
+	margin-right: 40px;
+	padding: 10px;
+}
+.discussions ul li:before {
+	content: '';
+	width: 20px;
+	height: 20px;
+	top: 15px;
+	left: -20px;
+	position: absolute;
+	background: url("../img/disc-arrow.png") no-repeat;
+	background-size: 20px 20px;
+}
+.discussions ul li .author {
+	position: absolute;
+	z-index: 1;
+	width: 60px;
+	float: left;
+	left: -70px;
+	top: 0px;
+}
+.discussions ul li .author img {
+	height: 50px;
+	-webkit-border-radius: 50em;
+	-moz-border-radius: 50em;
+	border-radius: 50em;
+	-webkit-box-shadow: 0px 1px 0px 1px #e4e6eb;
+	-moz-box-shadow: 0px 1px 0px 1px #e4e6eb;
+	box-shadow: 0px 1px 0px 1px #e4e6eb;
+}
+.discussions ul li .name {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 100%;
+	background: #fbfcfc;
+	padding: 5px 10px 5px 10px;
+	-webkit-border-radius: 2px 0px 0px 2px;
+	-moz-border-radius: 2px 0px 0px 2px;
+	border-radius: 2px 0px 0px 2px;
+}
+.discussions ul li .date {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	z-index: 1;
+	background: #f3f4f6;
+	padding: 5px 20px 5px 10px;
+	-webkit-border-radius: 2px 0px 0px 2px;
+	-moz-border-radius: 2px 0px 0px 2px;
+	border-radius: 2px 0px 0px 2px;
+}
+.discussions ul li .delete {
+	position: absolute;
+	-webkit-border-radius: 0px 2px 2px 0px;
+	-moz-border-radius: 0px 2px 2px 0px;
+	border-radius: 0px 2px 2px 0px;
+	background: #e4e6eb;
+	top: 10px;
+	right: -30px;
+	padding: 5px 10px;
+	display: inline-block;
+	cursor: pointer;
+}
+.discussions ul li .message {
+	border-bottom: 0;
+	margin: 20px -10px 0px -10px;
+	padding: 20px 20px 0 20px;
+}
+.discussions ul li ul {
+	overflow: hidden;
+}
+.discussions ul li ul li {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-bottom: 1px solid #e4e6eb;
+	margin: 0 -10px;
+	padding-left: 70px;
+}
+.discussions ul li ul li:before {
+	display: none;
+}
+.discussions ul li ul li:last-child {
+	border-bottom: none;
+}
+.discussions ul li ul li .author {
+	top: 10px;
+	left: 10px;
+}
+.discussions ul li ul li .author img {
+	height: 40px;
+	-webkit-border-radius: 50em;
+	-moz-border-radius: 50em;
+	border-radius: 50em;
+	-webkit-box-shadow: 0px 1px 0px 1px #e4e6eb;
+	-moz-box-shadow: 0px 1px 0px 1px #e4e6eb;
+	box-shadow: 0px 1px 0px 1px #e4e6eb;
+}
+.discussions ul li ul li .name {
+	left: 70px;
+}
+.discussions ul li ul li .date {
+	background: transparent;
+	right: 30px;
+}
+.discussions ul li ul li .delete {
+	background: transparent;
+	right: 10px;
+}
+.discussions ul li ul li .message {
+	border-bottom: none;
+}
+.discussions ul li textarea {
+	color: #333 !important;
+	background: #fff;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	width: 100%;
+}
+
+/* Quitamos flecha de avatar (temporal) */
+.discussions ul li:before{background:none}
+.discussions ul li{margin-left:20px}
+
+
+/* Infowindow */
+/*.report-infowindow{
+	border-top: 1px dashed #CCC;
+	margin-top: 10px;
+}
+.report-infowindow:first-child{
+	border-top: none;
+	margin-top: 0;
+}*/
+.report-infowindow{
+	min-width: 300px;
+}
+.report-infowindow .task-list{
+	margin: 0;
+	padding: 0;
+}
+.report-infowindow .task-list div.info{
+	font-size: 11px!important;
+}
+.report-infowindow .task-list .task .time{
+	width: 30%;
+}
+.report-infowindow .insertPoint{
+	max-height: 450px;
+	overflow: auto;
+}
+
+.priority.normal {
+  background: #BFE5F8;
+  margin-bottom: 1px;
+}
+.priority.normal span {
+	background: #36A9E1;
+	padding: 2px 10px;
+	color: white;
+	display: inline-block;
+	font-size: 12px;
+}
+.task.normal {
+	border-left: 2px solid #36A9E1;
+}
+
+::-webkit-scrollbar{
+  width: 9px;  /* for vertical scrollbars */
+  height: 9px; /* for horizontal scrollbars */
+}
+::-webkit-scrollbar-track{
+  background: #F5F5F5;
+}
+::-webkit-scrollbar-thumb{
+  background: #343434;
+}
+
+
+
+.nav.nav-pills > li > a:hover,
+.nav.nav-pills > li > a:focus{
+	background-color: #7bc2e4;
+}
+.nav-pills.active-underline > li.active > a,
+.nav-pills.active-underline > li.active > a:hover,
+.nav-pills.active-underline > li.active > a:focus{
+	text-decoration: underline;
+}
+.nav-pills.active-bold > li.active > a,
+.nav-pills.active-bold > li.active > a:hover,
+.nav-pills.active-bold > li.active > a:focus{
+	font-weight: bold;
+}
+
+
+textarea[readonly]{ background: #EEE; }
+
+
+/* Inputs resaltados (templates) */
+.has-warning .form-control{
+	background-color: #FFFFCC;
+}
+
+/* Fix jQuery Chosen */
+.chosen-container-multi .chosen-choices li.search-field input[type="text"]{
+	height: 20px;
+}
+
+
+
+
+/* --------------------------------------------- */
+
+/* Report.view (ver formulario con estilo texto) */
+
+.report-data-view [readonly],
+.report-data-view [disabled]{ cursor: default!important; }
+
+.report-data-view select[disabled]{ background: transparent; }
+
+.report-data-view div.form-group{
+	/*border-bottom: 1px solid #CCC;*/
+	margin-top: 10px;
+	padding-top: 6px;
+	padding-bottom: 11px;
+	margin-bottom: 12px;
+}
+
+.report-data-view label.checkbox,
+.report-data-view label.radio{ font-weight: normal; }
+
+.report-data-view input:focus,
+.report-data-view textarea:focus,
+.report-data-view select:focus{
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	     -o-box-shadow: none;
+	        box-shadow: none;
+}
+
+.report-data-view input.form-control,
+.report-data-view textarea,
+.report-data-view select{ border-style: dashed }
+.report-data-view input[type="file"]{ display:none; }
+.report-data-view select:not([multiple="multiple"]){ display:none; }
+.report-data-view input.color-picker{ display:none; }
+.report-data-view .color-sample{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	margin-top: -3px;
+}
+.report-data-view .color-sample-code{
+	color: #666666;
+	margin-left: 10px;
+}
+
+.report-data-view label.control-label{
+	vertical-align: top;
+	margin-right: 15px;
+	width: 20%;
+	text-align: right;
+}
+.report-data-view div.controls{
+	display: inline-block;
+	width: 75%;
+}
+.report-data-view div.controls label.checkbox:first-child,
+.report-data-view div.controls label.radio:first-child{ margin-top: 0; }
+.report-data-view div.controls input.form-control{ margin-top: -6px; }
+
+.action-timepicker-clear{
+	margin-left: 10px;
+	font-weight: normal;
+}
+
+// Table for import
+.tableimport {
+	padding: 0 5px;
+}
+.tableimport th {
+	min-width: 100px;
+}

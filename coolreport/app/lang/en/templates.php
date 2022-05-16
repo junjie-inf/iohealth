@@ -1,0 +1,45 @@
+<?php
+
+return array(
+	'user' => 'User',
+	'createdat' => 'Created at',
+	'reports' => 'Reports',
+	'back' => 'Back',
+	'fields' => 'Fields',
+	'savechanges' => 'Save changes',
+	'sending' => 'Sending...',
+	'report' => 'Report',
+	'addfield' => 'Add field',
+	'checkbox' => 'Checkbox',
+	'color' => 'Color',
+	'date' => 'Date',
+	'decimal' => 'Decimal',
+	'email' => 'Email',
+	'file' => 'File',
+	'number' => 'Number',
+	'radio' => 'Radio',
+	'range' => 'Range',
+	'select' => 'Select',
+	'text' => 'Text',
+	'textarea' => 'Textarea',
+	'time' => 'Time',
+	'settings' => 'Settings',
+	'geolocation' => 'Geolocation',
+	'viewinmap' => 'View in map',
+	'none' => 'None',
+	'creation' => 'Creation',
+	'filterbydate' => 'Filter by date',
+	'edit' => 'Edit',
+	'publicprofile' => 'Public profile',
+	'location' => 'Location',
+	'title' => 'Title',
+	'updatedat' => 'Updated at',
+	'configcrawler' => 'Config crawler',
+	'cleantemplate' => "Clean template's reports",
+	'preview' => 'Preview:',
+	'reportswithtemplate' => 'Reports with this template',
+);
+
+
+
+
